@@ -1,16 +1,57 @@
 <html>
     <head>
         <title>My form</title>
+        <style>
+            body{
+                background: linear-gradient(to right, #123456, grey);
+            }
+            label{
+                font-size: 30px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .l1{
+                color: blanchedalmond;
+            }
+            .inp{
+                height: 5%;
+                width: 15%;
+            }
+            .inp2{
+                height: 5%;
+                width: 5%;
+            }
+            div{
+                border: 2px solid red;
+            }
+        </style>
     </head>
     <body>
-        <form method="GET" action="#">
+        <div>
+        <form method="POST" action="one.html">
             <label>Enter your full name</label>
-            <input type="text" name="name"><br><br>
+            <input type="text" name="name" placeholder="Full Name : " class="inp"><br><br>
             <label>Enter your email</label>
-            <input type="email" name="email"><br><br>
+            <input type="email" name="email" required placeholder="Email : " class="inp"><br><br>
             <label>Enter your password</label>
-            <input type="password" name="passwd"><br><br>
-            <input type="submit">
+            <input type="password" name="passwd" required class="inp"><br><br>
+            <label>Choose your gender</label>
+            <input type="radio" name="gender" value="male" class="inp2"><label class="l1">Male</label><input type="radio" name="gender" class="inp2" value="female"><label class="l1">Female</label><br><br>
+            <label>Choose your preferred city</label>
+            <select name="location">
+                <option value="B">Bangalore</option>
+                <option value="H">Hyderabad</option>
+                <option value="P">Pune</option>
+                <option value="G">Gurugram</option>
+            </select><br><br>
+            <input type="submit" class="inp">
         </form>
+        </div>
     </body>
 </html>
+<!--Create a form using table tag
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>-->
