@@ -1,0 +1,41 @@
+body{
+    background: linear-gradient(to right, #123456, grey);
+}
+label{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.l1{
+    color: blanchedalmond;
+}
+.inp{
+    height: 5%;
+    width: 30%;
+    margin-left: 5%;
+    padding: 2%;
+    border: none;
+    border-radius: 10px;
+}
+.inp2{
+    height: 5%;
+    width: 5%;
+    margin-left: 5%;
+}
+div{
+    /* border: 2px solid red; */
+    width: 50%;
+    margin-top: 10%;
+    /* background-color: #7F000000;
+    opacity: 0.4; */
+}
+#sub{
+    height: 5%;
+    width: 30%;
+    margin-left: 5%;
+    background-color: #123456;
+    color: wheat;
+    border-radius: 10px;
+}
+select{
+    padding: 1%;
+}
