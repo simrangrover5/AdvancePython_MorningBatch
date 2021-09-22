@@ -14,6 +14,14 @@
         <center>
         <h3>Flask Project</h3>
         <p>We can create simple applications using flask</p>
+        {% if n %} 
+        <h2>Welcome to my class {{n}}</h2>
+        {% endif %}
+        {% if data %}
+        {% for key, value in data.items() %}
+        <h4 style="color: darkcyan;">{{ key }} : {{ value }} </h4>
+        {% endfor %}
+        {% endif %}
         </center>
     </body>
 </html>

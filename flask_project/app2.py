@@ -10,4 +10,18 @@ def index():
     # templates --> html --> one.html 
     # render_template("html/one.html")
 
+@app.route("/home/<name>/")
+def home(name):
+    return render_template("one.html", n = name)
+
+@app.route("/<name>/<city>/<state>/")
+def show(name, city, state):
+    data = {
+        'Name': name,
+        "City": city,
+        "State": state
+    }
+    return render_template("one.html", data=data)
+    
+
 app.run(debug=True)
